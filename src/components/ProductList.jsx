@@ -7,7 +7,7 @@ const ProductList = () => {
     const [products,setproducts]=useState([]);
     useEffect(()=>{
         const fetchData=async()=>{
-            const res=await axios.get("http://localhost:3000/products");
+            const res=await axios.get("https://vite-backend-1.onrender.com/products");
             console.log(res.data);
             setproducts(res.data);
         }
