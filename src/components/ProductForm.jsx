@@ -24,7 +24,7 @@ const ProductForm = (props) => {
 
     const handleAdd = async(e) => {
         e.preventDefault()
-        const response=await axios.post("http://localhost:3000/products",{
+        const response=await axios.post("https://vite-backend-1.onrender.com/products",{
             name:name,
             image:image,
             price:price
